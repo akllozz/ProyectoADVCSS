@@ -171,14 +171,18 @@ main{
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    column-gap: 50px;
+    row-gap: 100px;
     height: 500px;
     padding: 3rem;
+    align-items: center;
  
 }
 
 .lugar{
     border-radius: 15px;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
     box-shadow: 0 4px 4px 0 #da121248, 0 6px 20px 0 #da121248;
 }
 
