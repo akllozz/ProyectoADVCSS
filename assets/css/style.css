@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    background-color: #EEEEEE;
+    font-family: 'Poppins', 'Roboto';
+    text-align: center;
+    scroll-behavior: smooth; 
+    
+
+}
+
+.grid-container{
+    font-family: 'Poppins';
+    display: grid;
+    grid-template-areas:
+    "nav header"
+    "nav intros"
+    "nav main"
+    "nav section"
+    "nav footer";
+    grid-template-columns: 11.6875rem 1fr;
+    height: 100%;
+    width: 100%;
+
+
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #11468F;
+    color:#EEEEEE;
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    padding-top: 3rem;
+}
+
+.navimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.navimg img{
+    border-radius: 25%;
+    border: solid 1px #EEEEEE;
+
+}
+
+.navimg p{
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    padding-top: 2rem;
+}
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li{
+    padding: 1rem;
+    transition: all;
+}
+
+.navbar ul li:hover{
+    color: #DA1212;
+    cursor: pointer;
+
+    animation: space 1s infinite;
+    animation-direction: alternate;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #EEEEEE;
+
+}
+
+.navbar a:hover{
+    color: #DA1212;
+}
+
+@keyframes space{
+     from {
+        letter-spacing: 2px;
+     }
+     to{
+        letter-spacing: 5px;
+     }
+}
+
+
+header{
+    grid-area: header;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-family: 'Protest Revolution';
+    font-size: 2rem;
+    color: #EEEEEE;
+    text-shadow: 3px 3px 5px #000000;
+    font-stretch: expanded;
+
+    background-image: url("../imgs/cl-banner.jpg");
+    background-size: cover;
+}
+
+.content h1{
+    margin: 0;
+    padding: 0;
+
+    animation: move 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    from {
+    transform: translateX(0);
+        }
+    to {
+    transform: translateX(200px);
+        }
+ }
+
+#intros{
+    grid-area: intros;
+    padding: 3rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pregunta{
+    font-family: 'Protest Revolution';
+    font-size: 2rem;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    width: 60%;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    height: 500px;
+    padding: 3rem;
+ 
+}
+
+.lugar{
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 #da121248, 0 6px 20px 0 #da121248;
+}
+
+#galeria{
+    grid-area: section;
+    padding-bottom: 5rem;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 20rem 1rem;
+}
+
+#galeria h2{
+    letter-spacing: 2px;
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 3rem 0;
+}
+
+
+.fotos img{
+    filter: saturate(0%);
+    width: 10%;
+    border: 2px solid #041562;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all ease 0.4s;
+    cursor:pointer;
+}
+
+.fotos img:hover{
+    filter: saturate(100%);
+    width: 50%;
+    height: 400px;
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: #041562;
+    color: #EEEEEE;
+    padding: 1.75rem 1rem 1rem 1rem;
+    margin: 0;
+}
+
+footer p{
+    margin: 0;
+    padding: .5rem;
+}
+
+footer a{
+    color: #EEEEEE;
+}
+
+@media screen and ( width > 768px){
+    .burger{
+        display: none;
+    }
+}
