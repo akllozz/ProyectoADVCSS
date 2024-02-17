@@ -156,7 +156,8 @@ header{
 
 .pregunta{
     font-family: 'Protest Revolution';
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #DA1212;
 }
 
 .intro{
@@ -186,13 +187,53 @@ main{
     box-shadow: 0 4px 4px 0 #da121248, 0 6px 20px 0 #da121248;
 }
 
+.lugar h4{
+    font-family: 'Protest Revolution';
+    font-size: 5rem;
+    margin: 0;
+    text-shadow: 3px 3px 5px #00000026;
+}
+
+.ata{
+    background-image: url("../imgs/atacama.jpg");
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    
+}
+
+.santi{
+    background-image: url("../imgs/santiago.jpg");
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.valpo{
+    background-image: url("../imgs/valpo.jpg");
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.paine{
+    background-image: url("../imgs/torresdelpaine.jpg");
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
 #galeria{
     grid-area: section;
     padding-bottom: 5rem;
     height: 300px;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem 20rem 1rem;
+    padding: 10rem 1rem 20rem 1rem;
 }
 
 #galeria h2{
