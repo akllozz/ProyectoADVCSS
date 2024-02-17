@@ -203,6 +203,23 @@ main{
     
 }
 
+.ata:hover{
+    cursor: pointer;
+    animation: flip 3s ease-in;
+}
+
+@keyframes flip {
+    0%{
+    transform: rotateY(0deg);
+    }
+    50% {
+    transform: rotateY(180deg);
+    }
+    100%{
+    transform: rotateY(0deg)
+    }
+ }
+
 .santi{
     background-image: url("../imgs/santiago.jpg");
     background-size: contain;
@@ -210,6 +227,23 @@ main{
     -webkit-background-clip: text;
     color: transparent; 
 }
+
+.santi:hover{
+    cursor: pointer;
+    animation: flip 3s ease-in;
+}
+
+@keyframes flip {
+    0%{
+    transform: rotateY(0deg);
+    }
+    50% {
+    transform: rotateY(180deg);
+    }
+    100%{
+    transform: rotateY(0deg)
+    }
+ }
 
 .valpo{
     background-image: url("../imgs/valpo.jpg");
@@ -219,6 +253,23 @@ main{
     color: transparent; 
 }
 
+.valpo:hover{
+    cursor: pointer;
+    animation: flip 3s ease-in;
+}
+
+@keyframes flip {
+    0%{
+    transform: rotateY(0deg);
+    }
+    50% {
+    transform: rotateY(180deg);
+    }
+    100%{
+    transform: rotateY(0deg)
+    }
+ }
+
 .paine{
     background-image: url("../imgs/torresdelpaine.jpg");
     background-size: contain;
@@ -227,6 +278,23 @@ main{
     color: transparent; 
 }
 
+.paine:hover{
+    cursor: pointer;
+    animation: flip 3s ease-in;
+}
+
+@keyframes flip {
+    0%{
+    transform: rotateY(0deg);
+    }
+    50% {
+    transform: rotateY(180deg);
+    }
+    100%{
+    transform: rotateY(0deg)
+    }
+ }
+
 #galeria{
     grid-area: section;
     padding-bottom: 5rem;
@@ -234,6 +302,8 @@ main{
     justify-content: center;
     align-items: center;
     padding: 10rem 1rem 20rem 1rem;
+    font-family: 'Protest Revolution';
+    font-size: 2rem;
 }
 
 #galeria h2{
