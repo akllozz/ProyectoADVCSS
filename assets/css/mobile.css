@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    background-color: #EEEEEE;
+    font-family: 'Poppins', 'Roboto';
+    text-align: center;
+    scroll-behavior: smooth; 
+    
+
+}
+
+@media screen and (width < 576px){
+
+.grid-container{
+    font-family: 'Poppins';
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "header"
+    "intros"
+    "main"
+    "section"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+
+
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #11468F;
+    color:#EEEEEE;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.navimg p{
+    font-size: 1rem;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+.navimg img{
+    height: 25px;
+
+}
+
+.navbar{
+    display: none;
+}
+
+.burger{
+    padding: 0 1rem 0 0;
+}
+
+.hero{
+    height: 100px;
+    width: auto;
+    font-size: 1rem;
+}
+
+@keyframes move {
+    from {
+    transform: translateX(60px);
+        }
+    to {
+    transform: translateX(110px);
+        }
+ }
+
+.intro p{
+    margin: 0;
+}
+
+main{
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    padding: 1rem;
+}
+
+.lugar h4{
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 3px 3px 5px #00000026;
+}
+
+.lugar p{
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.fotos{
+    padding: 3rem 0 3rem 0;
+}
+
+}
+

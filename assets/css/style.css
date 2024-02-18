@@ -27,6 +27,7 @@ body, html{
     "nav section"
     "nav footer";
     grid-template-columns: 11.6875rem 1fr;
+    grid-template-rows: 1fr;
     height: 100%;
     width: 100%;
 
@@ -58,6 +59,7 @@ nav{
 .navimg img{
     border-radius: 25%;
     border: solid 1px #EEEEEE;
+    height: 35px;
 
 }
 
@@ -70,6 +72,7 @@ nav{
 .navbar{
     padding-top: 3rem;
 }
+
 .navbar ul{
     list-style: none;
     padding: 0;
@@ -107,7 +110,6 @@ nav{
         letter-spacing: 5px;
      }
 }
-
 
 header{
     grid-area: header;
@@ -147,7 +149,7 @@ header{
 
 #intros{
     grid-area: intros;
-    padding: 3rem 2rem 0 2rem;
+    padding: 2rem 2rem 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,13 +171,16 @@ header{
     width: 60%;
 }
 
+.intro p{
+    margin: 0;
+}
+
 main{
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-    row-gap: 100px;
-    height: 500px;
+    row-gap: 50px;
     padding: 3rem;
     align-items: center;
  
@@ -302,10 +307,9 @@ main{
 #galeria{
     grid-area: section;
     padding-bottom: 5rem;
-    height: 300px;
     justify-content: center;
     align-items: center;
-    padding: 10rem 1rem 20rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     font-family: 'Protest Revolution';
     font-size: 2rem;
     color: #DA1212;
@@ -313,6 +317,7 @@ main{
 
 #galeria h2{
     letter-spacing: 2px;
+    margin: 0;
 }
 
 .fotos{
@@ -320,6 +325,7 @@ main{
     justify-content: center;
     align-items: center;
     padding: 3rem 0 3rem 0;
+
 }
 
 
@@ -375,3 +381,4 @@ footer a{
         display: none;
     }
 }
+
