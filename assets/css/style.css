@@ -356,6 +356,16 @@ main{
     height: 400px;
 }
 
+#galeria p{
+    font-family: 'Poppins', 'Roboto';
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.blue{
+    color: #041562;
+}
+
 
 footer{
     grid-area: footer;
