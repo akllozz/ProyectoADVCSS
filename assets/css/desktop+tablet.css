@@ -358,6 +358,7 @@ main{
 
 #galeria p{
     font-family: 'Poppins', 'Roboto';
+    font-size: 1.3rem;
     margin: 0;
     padding-bottom: 2rem;
 }
