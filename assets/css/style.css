@@ -374,7 +374,7 @@ footer{
 }
 
 .fa-twitter{
-    padding: 0 1rem 0 1rem;
+    padding: 0 1.2rem 0 1.2rem;
 }
 
 footer p{
@@ -383,8 +383,16 @@ footer p{
 
 footer a{
     color: #EEEEEE;
+    transition: all .5s;
     
 }
+footer a:hover{
+    color: #DA1212;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+
 
 @media screen and ( width > 768px){
     .burger{
