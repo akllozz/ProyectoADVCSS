@@ -192,6 +192,8 @@ main{
     box-shadow: 0 4px 4px 0 #11468f5e, 0 6px 20px 0 #11468f5e;
 }
 
+
+
 .lugar h4{
     font-family: 'Protest Revolution';
     font-size: 5rem;
@@ -200,7 +202,7 @@ main{
 }
 
 .lugar p{
-    padding: 1rem 0 0 0;
+    padding: 1rem 1.5rem 0 1.5rem;
 }
 
 .ata{
@@ -303,6 +305,14 @@ main{
     transform: rotateY(0deg)
     }
  }
+
+ @media screen and (width > 768px) and (width < 1280px)
+{
+  .lugar h4{
+    font-size: 2.5rem;
+  } 
+}
+
 
 #galeria{
     grid-area: section;

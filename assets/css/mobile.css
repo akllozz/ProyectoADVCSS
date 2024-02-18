@@ -17,7 +17,7 @@ body, html{
 
 }
 
-@media screen and (width < 576px){
+@media screen and (width < 769px){
 
 .grid-container{
     font-family: 'Poppins';
@@ -92,7 +92,7 @@ nav{
 main{
     grid-template-columns: 1fr;
     row-gap: 30px;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .lugar h4{
