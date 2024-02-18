@@ -202,7 +202,26 @@ main{
 }
 
 .lugar p{
-    padding: 1rem 1.5rem 0 1.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.lugar a{
+    text-decoration: none;
+}
+
+.lugar .btn{
+    background-color: #11468F;
+    margin-top: auto;
+    border-radius: .625rem;
+    color: #EEEEEE;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    transition: all 1s;
+}
+
+.btn:hover{
+    background-color: #DA1212;
+    color: #EEEEEE;
+    border: solid 1.5px #041562 ;
 }
 
 .ata{
@@ -314,6 +333,7 @@ main{
 }
 
 
+
 #galeria{
     grid-area: section;
     padding-bottom: 5rem;
@@ -362,6 +382,7 @@ main{
     margin: 0;
     padding-bottom: 2rem;
 }
+
 
 .blue{
     color: #041562;
