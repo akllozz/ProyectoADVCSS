@@ -48,18 +48,13 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0 1rem 0;
+    padding: 1.5rem 0 1rem 1rem;
 }
 
 .navimg p{
-    font-size: 1.2rem;
+
     padding: 0 0 0 10px;
     margin: 0;
-}
-
-.navimg img{
-    height: 25px;
-
 }
 
 .navbar{
