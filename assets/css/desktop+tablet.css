@@ -326,14 +326,6 @@ main{
     }
  }
 
- @media screen and (width > 768px) and (width < 1280px)
-{
-  .lugar h4{
-    font-size: 2.5rem;
-  } 
-}
-
-
 
 #galeria{
     grid-area: section;
