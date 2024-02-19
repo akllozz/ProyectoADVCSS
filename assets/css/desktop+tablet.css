@@ -479,7 +479,7 @@ footer a:hover{
     .navbar ul li:last-child{
         padding: 0 1rem 0 0.5rem;
     }
-
+    
     @keyframes move {
         from {
         transform: translateX(60px);
