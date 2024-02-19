@@ -65,7 +65,7 @@ nav{
 
 .navimg p{
     font-size: 1.5rem;
-    padding: 0;
+    padding-left: .5rem;
     margin: 0;
 }
 
@@ -81,6 +81,7 @@ nav{
 
 .navbar ul li{
     padding: 1.5rem;
+    letter-spacing: 1px;
     transition: all;
 }
 
@@ -426,9 +427,80 @@ footer a:hover{
 
 
 
-@media screen and ( width > 768px){
+@media screen and ( width >= 600px){
     .burger{
         display: none;
+    }
+}
+
+@media screen and (width < 961px){
+    .grid-container{
+        font-family: 'Poppins';
+        display: grid;
+        grid-template-areas:
+        "nav"
+        "header"
+        "intros"
+        "main"
+        "section"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 100%;
+        width: 100%;
+    
+    
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav{
+        grid-area: nav;
+        background-color: #11468F;
+        color:#EEEEEE;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .navimg p{
+        padding-left: .5rem;
+    }
+
+    .navbar{
+        padding-top: 0;
+    }
+
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .navbar ul li{
+        padding: 0 0.5rem 0 0.5rem;
+    }
+
+    .navbar ul li:last-child{
+        padding: 0 1rem 0 0.5rem;
+    }
+
+    @keyframes move {
+        from {
+        transform: translateX(60px);
+            }
+        to {
+        transform: translateX(130px);
+            }
+     }
+
+    main{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        padding: 2rem;
     }
 }
 
